@@ -1,0 +1,17 @@
+# SME-Digital UZ
+
+A website project that helps small local businesses in Uzbekistan get online with ready-made, affordable website templates, so owners can publish their services and contacts without writing code.
+
+**Live site:** https://abduhalim72.github.io/sme-digital-uz/
+
+## Status
+Work in progress. The landing page is online, and one sample template (shop) is built. More templates are planned.
+
+## How it works
+Each business page is generated from a single data file (`data.js`). The owner only edits this file, and the page updates automatically through JavaScript (`dokon.js`).
+
+## Built with
+HTML, CSS, JavaScript, GitHub Pages
+
+## Author
+[Sotvoldiyev Abduhalimjon], student of Computer Graphics and Design
