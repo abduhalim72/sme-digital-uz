@@ -37,3 +37,17 @@ h2 {
   width: 240px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.steps {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px 0 40px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+footer {
+  margin-top: 48px;
+  padding: 24px 20px;
+  background: #0b2545;
+  color: white;
+}
