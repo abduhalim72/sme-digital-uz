@@ -7,6 +7,12 @@ body {
 h1 {
   color: #0b2545;
 }
+
+h2 {
+  color: #0b2545;
+  margin-top: 48px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 24px;
@@ -17,16 +23,13 @@ h1 {
   border-radius: 8px;
   font-weight: bold;
 }
-h2 {
-  color: #0b2545;
-  margin-top: 48px;
-}
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 16px;
-  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0 20px 40px;
 }
 
@@ -34,9 +37,21 @@ h2 {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  width: 240px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .steps {
   max-width: 500px;
   margin: 0 auto;
