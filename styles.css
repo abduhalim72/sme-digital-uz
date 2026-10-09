@@ -170,3 +170,42 @@ a:focus-visible {
   display: block;
   margin: 0 auto 16px;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgba(255, 250, 243, 0.92);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(11, 37, 69, 0.1);
+}
+
+.topbar .links {
+  display: flex;
+  gap: 18px;
+}
+
+.topbar .links a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.topbar .links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .topbar .links a:nth-child(2) {
+    display: none;
+  }
+}
