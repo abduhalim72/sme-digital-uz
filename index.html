@@ -10,73 +10,115 @@
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-      <nav class="topbar">
-    <a href="#top"><img src="logo-icon.svg" alt="SME-Digital UZ" width="32" height="32"></a>
-    <div class="links">
-      <a href="#shablonlar">Shablonlar</a>
-      <a href="#qanday">Qanday ishlaydi</a>
-      <a href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top"><img src="logo-icon.svg" alt="" width="34" height="34">SME-Digital UZ</a>
+      <div class="menu">
+        <a href="#shablonlar">Shablonlar</a>
+        <a href="#qanday">Qanday ishlaydi</a>
+        <a href="#savollar">Savollar</a>
+        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+      </div>
     </div>
   </nav>
+
   <header class="hero" id="top">
-    <img src="logo-icon.svg" alt="SME-Digital UZ logotipi" width="96" height="96">
-    <h1>SME-Digital UZ</h1>
-    <p>Kichik bizneslar uchun tayyor va arzon saytlar.</p>
-    <a class="btn" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+    <div class="wrap">
+      <span class="tag">Kichik bizneslar uchun</span>
+      <h1>Kichik biznesingiz <span>internetda</span> ko'rinsin</h1>
+      <p>Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+        <a class="btn btn-ghost" href="dokon.html">Namunani ko'rish</a>
+      </div>
+    </div>
   </header>
 
-  <section id="shablonlar">
-    <h2>Shablonlar</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="icon" aria-hidden="true">🛒</div>
-        <h3>Do'kon</h3>
-        <p>Mahsulotlar, ish vaqti va manzil.</p>
-        <a class="link" href="dokon.html">Namunani ko'rish</a>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">📚</div>
-        <h3>O'quv markazi</h3>
-        <p>Kurslar, jadval va ro'yxatdan o'tish.</p>
-        <span class="badge">Tez orada</span>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">💼</div>
-        <h3>Xizmat ko'rsatish</h3>
-        <p>Xizmatlar, narxlar va manzil.</p>
-        <span class="badge">Tez orada</span>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">🛠️</div>
-        <h3>Ustaxona</h3>
-        <p>Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
-        <span class="badge">Tez orada</span>
+  <main>
+    <div class="wrap">
+      <div class="feats reveal">
+        <div class="feat"><b>Tayyor shablonlar</b><span>Noldan boshlamasdan, tayyor tuzilma bilan.</span></div>
+        <div class="feat"><b>Kodsiz yangilash</b><span>Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
+        <div class="feat"><b>Telefonda qulay</b><span>Har qanday ekranga moslashadi.</span></div>
       </div>
     </div>
-  </section>
 
-  <section id="qanday">
-    <h2>Qanday ishlaydi</h2>
-    <div class="steps">
-      <div class="step">
-        <span class="num">1</span>
-        <p>Shablonni tanlang.</p>
+    <section id="shablonlar">
+      <div class="wrap">
+        <div class="head reveal"><h2>Shablonlar</h2><p>Biznesingizga mosini tanlang.</p></div>
+        <div class="bento">
+          <div class="tile big reveal">
+            <div class="ic" aria-hidden="true">🛒</div>
+            <h3>Do'kon</h3>
+            <p>Mahsulotlar, ish vaqti va manzil.</p>
+            <a class="btn btn-primary" href="dokon.html">Namunani ko'rish</a>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true">📚</div>
+            <h3>O'quv markazi</h3>
+            <p>Kurslar, jadval va ro'yxatdan o'tish.</p>
+            <span class="badge">Tez orada</span>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true">💼</div>
+            <h3>Xizmat ko'rsatish</h3>
+            <p>Xizmatlar, narxlar va manzil.</p>
+            <span class="badge">Tez orada</span>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true">🛠️</div>
+            <h3>Ustaxona</h3>
+            <p>Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
+            <span class="badge">Tez orada</span>
+          </div>
+        </div>
       </div>
-      <div class="step">
-        <span class="num">2</span>
-        <p>Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p>
+    </section>
+
+    <section id="qanday">
+      <div class="wrap">
+        <div class="head reveal"><h2>Qanday ishlaydi</h2><p>Uch oddiy qadam.</p></div>
+        <div class="steps">
+          <div class="step reveal"><span class="num">1</span><p>Shablonni tanlang.</p></div>
+          <div class="step reveal"><span class="num">2</span><p>Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p></div>
+          <div class="step reveal"><span class="num">3</span><p>Saytingiz internetda tayyor bo'ladi.</p></div>
+        </div>
       </div>
-      <div class="step">
-        <span class="num">3</span>
-        <p>Saytingiz internetda tayyor bo'ladi.</p>
+    </section>
+
+    <section id="savollar">
+      <div class="wrap">
+        <div class="head reveal"><h2>Savollar</h2></div>
+        <div class="faq reveal">
+          <details><summary>Qancha turadi?</summary><p>Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.</p></details>
+          <details><summary>Kod bilishim kerakmi?</summary><p>Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.</p></details>
+          <details><summary>Qanday bog'lanaman?</summary><p>Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.</p></details>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.</p>
   </footer>
+
+  <a class="float" href="https://t.me/sotvoldiyev_abduhalim" aria-label="Telegram orqali bog'lanish">Telegram</a>
+
+  <script>
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add('in'); });
+    }
+  </script>
 </body>
 </html>
