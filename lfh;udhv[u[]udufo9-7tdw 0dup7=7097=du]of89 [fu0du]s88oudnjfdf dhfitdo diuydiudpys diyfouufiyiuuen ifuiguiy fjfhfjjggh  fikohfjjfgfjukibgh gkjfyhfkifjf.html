@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Do'kon</title>
-  <meta name="description" content="Do'kon uchun namuna sahifa. SME-Digital UZ shablonlaridan biri.">
-  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+  <title>Namuna Do'kon — SME-Digital UZ</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
 </head>
 <body>
   <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="logo-icon.svg" alt="" width="34" height="34">SME-Digital UZ</a>
+      <a class="brand" href="index.html">
+        <img src="logo-icon.svg" alt="" width="34" height="34">
+        SME-Digital UZ
+      </a>
       <div class="menu">
-        <a href="index.html">Bosh sahifa</a>
-        <a class="pill" id="aloqa" href="#">Bog'lanish</a>
+        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" style="padding: 70px 0 50px;">
     <div class="wrap">
-      <span class="tag">Namuna sahifa</span>
-      <h1 id="nom"></h1>
-      <p id="tavsif"></p>
+      <h1 style="font-size: clamp(1.8rem, 5vw, 2.8rem);">Namuna Do'kon</h1>
+      <p>Kundalik mahsulotlar mahallangizning o'zida.</p>
     </div>
   </header>
 
   <main>
     <section>
       <div class="wrap">
-        <div class="head"><h2>Mahsulotlar</h2></div>
-        <div class="grid" id="mahsulotlar"></div>
+        <div class="head">
+          <h2>Mahsulotlar</h2>
+        </div>
+        <div class="product-grid" id="mahsulotlar">
+          <!-- Bu yerga JavaScript orqali mahsulotlar tushadi -->
+        </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="head"><h2>Ish vaqti va manzil</h2></div>
-        <div class="info">
-          <div><p id="ishVaqti"></p></div>
-          <div><p id="manzil"></p></div>
+        <div class="head">
+          <h2>Ish vaqti va manzil</h2>
         </div>
-        <p><a class="back" href="index.html">Orqaga</a></p>
+        <div class="info">
+          <div>
+            <p><strong>Ish vaqti:</strong></p>
+            <p id="ishVaqti">Dushanba – Shanba: 08:00 – 20:00</p>
+          </div>
+          <div>
+            <p><strong>Manzil:</strong></p>
+            <p id="manzil">Farg'ona shahri, [ko'cha nomi]</p>
+          </div>
+        </div>
+        <p style="margin-top: 30px;">
+          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+        </p>
+        <p><a class="back" href="index.html">← Orqaga</a></p>
       </div>
     </section>
   </main>

@@ -1,23 +1,22 @@
-document.title = biznes.nom;
-document.getElementById("nom").textContent = biznes.nom;
-document.getElementById("tavsif").textContent = biznes.tavsif;
-document.getElementById("ishVaqti").textContent = "Ish vaqti: " + biznes.ishVaqti;
-document.getElementById("manzil").textContent = "Manzil: " + biznes.manzil;
-document.getElementById("aloqa").href = biznes.telegram;
+// Mahsulotlarni chiqarish
+const container = document.getElementById("mahsulotlar");
 
-const joy = document.getElementById("mahsulotlar");
+const mahsulotlar = [
+  { nom: "Non", narx: "5 000 so'm", emoji: "🍞" },
+  { nom: "Sut", narx: "12 000 so'm", emoji: "🥛" },
+  { nom: "Tuxum", narx: "18 000 so'm", emoji: "🥚" },
+  { nom: "Sharbat", narx: "15 000 so'm", emoji: "🧃" },
+  { nom: "Choy", narx: "25 000 so'm", emoji: "🍵" },
+  { nom: "Sovun", narx: "8 000 so'm", emoji: "🧼" }
+];
 
-biznes.mahsulotlar.forEach(function (m) {
-  const karta = document.createElement("div");
-  karta.className = "card";
-
-  const sarlavha = document.createElement("h3");
-  sarlavha.textContent = m.nom;
-
-  const matn = document.createElement("p");
-  matn.textContent = m.tavsif;
-
-  karta.appendChild(sarlavha);
-  karta.appendChild(matn);
-  joy.appendChild(karta);
+mahsulotlar.forEach(item => {
+  const card = document.createElement("div");
+  card.className = "product-card";
+  card.innerHTML = `
+    <div class="product-img">${item.emoji}</div>
+    <h4>${item.nom}</h4>
+    <p class="price">${item.narx}</p>
+  `;
+  container.appendChild(card);
 });

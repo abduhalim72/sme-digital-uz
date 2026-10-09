@@ -87,3 +87,47 @@ a:focus-visible,summary:focus-visible{outline:3px solid #f59e0b;outline-offset:3
 @media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}.tile.big{grid-row:span 2}}
 @media(max-width:640px){.menu a:not(.pill){display:none}.hero{padding:72px 0 96px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.js .reveal{opacity:1;transform:none}}
+/* ===== Do'kon sahifasi uchun qo'shimcha stillar ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 30px 0 50px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.product-img {
+  height: 140px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.product-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--orange);
+  margin: 0;
+}
