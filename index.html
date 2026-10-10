@@ -140,10 +140,36 @@
   function openDemo(biznesType) {
     // Hozirgi tanlangan tilni localStorage yoki URL'dan olamiz
     const currentLang = localStorage.getItem("sme_lang") || "uz";
-    
+
     // Yangi sahifaga til va biznes turini birga uzatamiz
     window.location.href = `dokon.html?biznes=${biznesType}&lang=${currentLang}`;
   }
 </script>
+<section class="impact-section">
+  <div class="wrap">
+    <h2 class="section-title">Loyiha Natijalari (Impact)</h2>
+    <div class="impact-grid">
+      
+      <div class="impact-card">
+        <div class="icon-box">🤝</div>
+        <h3>Mahalliy Bizneslar Hamkorligi</h3>
+        <p>Farg'ona viloyatidagi kichik bizneslar uchun bepul raqamli yechimlar va shablonlar.</p>
+      </div>
+
+      <div class="impact-card">
+        <div class="icon-box">🚀</div>
+        <h3>Faol Loyihalar</h3>
+        <p>Do'konlar va o'quv markazlari uchun mo'ljallangan tayyor namuna sahifalari.</p>
+      </div>
+
+      <div class="impact-card">
+        <div class="icon-box">🎓</div>
+        <h3>O'qituvchilar Uchun Treninglar</h3>
+        <p>Kiberxavfsizlik va raqamli savodxonlik bo'yicha maktablarda o'tkazilgan taqdimotlar.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 </body>
 </html>

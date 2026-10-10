@@ -205,3 +205,120 @@ body {
   color: #2563eb;
   font-size: 1.1rem;
 }
+/* --- Hero va Matnlar uslubi --- */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.hero p {  color: #94a3b8;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+}
+
+/* --- Kartochkalar (Cards) Zamonaviy Dizayni --- */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+/* Kartochka ustiga sichqoncha kelganda */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -10px rgba(37, 99, 235, 0.3);
+}
+
+.card img {
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* --- Zamonaviy Tugmalar (CTA Buttons) --- */
+.btn-primary {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: scale(1.02);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+.impact-section {
+  background-color: #f8fafc;
+  padding: 60px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.impact-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.icon-box {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.impact-card h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.impact-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
