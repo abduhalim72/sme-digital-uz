@@ -136,5 +136,14 @@
     }
   </script>
   <script src="lang.js"></script>
+ <script>
+  function openDemo(biznesType) {
+    // Hozirgi tanlangan tilni localStorage yoki URL'dan olamiz
+    const currentLang = localStorage.getItem("sme_lang") || "uz";
+    
+    // Yangi sahifaga til va biznes turini birga uzatamiz
+    window.location.href = `dokon.html?biznes=${biznesType}&lang=${currentLang}`;
+  }
+</script>
 </body>
 </html>

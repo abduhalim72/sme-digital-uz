@@ -161,3 +161,47 @@ a:focus-visible,summary:focus-visible{outline:3px solid #f59e0b;outline-offset:3
 .lang button:hover{color:#fff}
 .lang button.on{background:#fff;color:var(--navy);border-color:#fff}
 @media(max-width:640px){.brand span{display:none}}
+/* Zamonaviy shrift va fon */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mahsulotlar kartochkasi dizayni */
+#mahsulotlar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  margin-top: 0;
+  color: #1e293b;
+  font-size: 1.25rem;
+}
+
+.product-card .price {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
