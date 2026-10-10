@@ -41,13 +41,26 @@ function setText(id, text) {
   if (el && text !== undefined) el.textContent = text;
 }
 
-function render(lang) {
-  if (!lang) lang = selectedLang;
+// HTML'dagi UZ, RU, EN tugmalari bosilganda ishlaydigan funksiya:
+function setLanguage(lang) {
   selectedLang = lang;
   localStorage.setItem("sme_lang", lang);
 
+  // URL parametrini ham yangilab qo'yamiz
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", lang);
+  window.history.pushState({}, '', url);
+
+  // Sahifani yangi tilda qayta chizamiz
+  render(lang);
+}
+
+function render(lang) {
+  if (!lang) lang = selectedLang;
+  selectedLang = lang;
+
   var d = D[lang] || D.uz;
-  var b = bizneslar[kalit];
+  var b = (typeof bizneslar !== 'undefined') ? bizneslar[kalit] : null;
 
   // AGAR data.js da har bir til alohida bo'lsa (b[lang]), aks holda b o'zini oladi
   var x = (b && b[lang]) ? b[lang] : b;

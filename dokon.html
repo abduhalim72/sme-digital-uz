@@ -3,25 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Do'kon (namuna)</title>
+  <meta name="theme-color" content="#0b2545">
+  <title>Do'kon</title>
+  <meta name="description" content="Do'kon uchun namuna sahifa. SME-Digital UZ shablonlaridan biri.">
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Namuna Do'kon</h1>
-  <p>Kundalik mahsulotlar mahallangizning o'zida.</p>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="logo-icon.svg" alt="" width="34" height="34"><span>SME-Digital UZ</span></a>
+      <div class="menu">
+        <a id="navHome" href="index.html">Bosh sahifa</a>
+       <div class="lang" role="group" aria-label="Til">
+  <button type="button" data-lang="uz" onclick="setLanguage('uz')">UZ</button>
+  <button type="button" data-lang="ru" onclick="setLanguage('ru')">RU</button>
+  <button type="button" data-lang="en" onclick="setLanguage('en')">EN</button>
+</div>
+        </div>
+        <a class="pill" id="aloqa" href="#">Bog'lanish</a>
+      </div>
+    </div>
+  </nav>
 
-  <h2>Mahsulotlar</h2>
-  <div class="cards">
-    <div class="card"><h3>Oziq-ovqat</h3><p>Non, sut, don mahsulotlari</p></div>
-    <div class="card"><h3>Ichimliklar</h3><p>Suv, sharbat, choy</p></div>
-    <div class="card"><h3>Maishiy buyumlar</h3><p>Kundalik kerakli narsalar</p></div>
-  </div>
+  <header class="hero">
+    <div class="wrap">
+      <span class="tag" id="tag"></span>
+      <h1 id="nom"></h1>
+      <p id="tavsif"></p>
+    </div>
+  </header>
 
-  <h2>Ish vaqti va manzil</h2>
-  <p>Ish vaqti: [vaqtni yozing]</p>
-  <p>Manzil: [manzilni yozing]</p>
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="head"><h2 id="bolim"></h2></div>
+        <div class="grid" id="mahsulotlar"></div>
+      </div>
+    </section>
 
-  <a class="btn" href="https://t.me/username">Bog'lanish</a>
-  <p><a href="index.html">Orqaga</a></p>
+    <section>
+      <div class="wrap">
+        <div class="head"><h2 id="ishH"></h2></div>
+        <div class="info">
+          <div><p id="ishVaqti"></p></div>
+          <div><p id="manzil"></p></div>
+        </div>
+        <p><a class="back" id="back" href="index.html"></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer"></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="dokon.js"></script>
 </body>
 </html>
