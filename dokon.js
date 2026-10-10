@@ -7,7 +7,7 @@ const D = {
     hours: "Ish vaqti: ",
     addr: "Manzil: ",
     back: "← Ortga",
-    footer: "Barcha huquqlar hümoyalangan."
+    footer: "Barcha huquqlar himoyalangan."
   },
   ru: {
     home: "Главная",
@@ -31,68 +31,70 @@ const D = {
   }
 };
 
-// URL'dan til va biznes turini olish
-const params = new URLSearchParams(location.search);
-let currentLang = params.get("lang") || localStorage.getItem("sme_lang") || "uz";
-const kalit = bizneslar[params.get("biznes")] ? params.get("biznes") : "dokon";
-const b = bizneslar[kalit];
+// URL yoki LocalStorage'dan til va biznes turini olish
+const params = new URLSearchParams(window.location.search);
+let selectedLang = params.get("lang") || localStorage.getItem("sme_lang") || "uz";
+const kalit = (typeof bizneslar !== 'undefined' && bizneslar[params.get("biznes")]) ? params.get("biznes") : "dokon";
 
 function setText(id, text) {
   var el = document.getElementById(id);
   if (el && text !== undefined) el.textContent = text;
 }
 
-function changeLanguage(lang) {
-  currentLang = lang;
-  localStorage.setItem("sme_lang", lang);
-  
-  // URL'ni sahifani qayta yuklamasdan yangilash
-  const url = new URL(window.location);
-  url.searchParams.set('lang', lang);
-  window.history.pushState({}, '', url);
-
-  render(lang);
-}
-
 function render(lang) {
+  if (!lang) lang = selectedLang;
+  selectedLang = lang;
+  localStorage.setItem("sme_lang", lang);
+
   var d = D[lang] || D.uz;
-  
-  // bizneslar ma'lumotlari data.js ichida har bir til uchun bo'lishi kerak
-  var x = (b && b[lang]) ? b[lang] : (b && b.uz ? b.uz : b);
+  var b = bizneslar[kalit];
+
+  // AGAR data.js da har bir til alohida bo'lsa (b[lang]), aks holda b o'zini oladi
+  var x = (b && b[lang]) ? b[lang] : b;
 
   document.documentElement.lang = lang;
   if (x && x.nom) document.title = x.nom;
 
+  // Statik tarjimalar
   setText("navHome", d.home);
   setText("aloqa", d.contact);
   setText("tag", d.tag);
-  setText("nom", x ? x.nom : "");
-  setText("tavsif", x ? x.tavsif : "");
-  setText("bolim", x ? x.bolim : "");
   setText("ishH", d.hoursH);
-  setText("ishVaqti", d.hours + (x ? x.ishVaqti : ""));
-  setText("manzil", d.addr + (x ? x.manzil : ""));
   setText("back", d.back);
   setText("footer", "© " + new Date().getFullYear() + " SME-Digital UZ. " + d.footer);
 
-  // Mahsulotlar/Xizmatlar ro'yxatini render qilish
-  var joy = document.getElementById("mahsulotlar");
-  if (joy && x && x.mahsulotlar) {
-    joy.innerHTML = "";
-    x.mahsulotlar.forEach(function(item) {
-      var card = document.createElement("div");
-      card.className = "product-card";
-      card.innerHTML = `
-        <h3>${item.nom}</h3>
-        <p>${item.tavsif || ''}</p>
-        <span class="price">${item.narx}</span>
-      `;
-      joy.appendChild(card);
-    });
+  // Dynamic ma'lumotlar (data.js dan keladiganlar)
+  if (x) {
+    setText("nom", x.nom);
+    setText("tavsif", x.tavsif);
+    setText("bolim", x.bolim);
+    
+    var ishVaqtiMatn = x.ishVaqti || x.hours;
+    var manzilMatn = x.manzil || x.addr;
+
+    setText("ishVaqti", d.hours + (ishVaqtiMatn || ''));
+    setText("manzil", d.addr + (manzilMatn || ''));
+
+    // Mahsulotlar / Xizmatlar ro'yxatini chiqarish
+    var joy = document.getElementById("mahsulotlar");
+    if (joy && (x.mahsulotlar || x.services || x.items)) {
+      var list = x.mahsulotlar || x.services || x.items;
+      joy.innerHTML = "";
+      list.forEach(function(item) {
+        var card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <h3>${item.nom || item.title || item.name}</h3>
+          <p>${item.tavsif || item.desc || ''}</p>
+          <span class="price">${item.narx || item.price || ''}</span>
+        `;
+        joy.appendChild(card);
+      });
+    }
   }
 }
 
-// Sahifa yuklanganda ishga tushish
+// Sahifa yuklanganda ishga tushadi
 document.addEventListener("DOMContentLoaded", function() {
-  render(currentLang);
+  render(selectedLang);
 });
