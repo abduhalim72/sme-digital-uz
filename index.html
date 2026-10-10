@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b2545">
+  <meta name="theme-color" content="#0b2545">
   <title>SME-Digital UZ</title>
   <meta name="description" content="SME-Digital UZ: kichik bizneslar uchun tayyor va arzon veb-sayt shablonlari.">
   <meta property="og:title" content="SME-Digital UZ">
@@ -16,25 +16,30 @@
 <body>
   <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="#top"><img src="logo-icon.svg" alt="" width="34" height="34">SME-Digital UZ</a>
+      <a class="brand" href="#top"><img src="logo-icon.svg" alt="" width="34" height="34"><span>SME-Digital UZ</span></a>
       <div class="menu">
-        <a href="#shablonlar">Shablonlar</a>
-        <a href="#qanday">Qanday ishlaydi</a>
-        <a href="#savollar">Savollar</a>
-        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
+        <a href="#shablonlar" data-i18n="nav_templates">Shablonlar</a>
+        <a href="#qanday" data-i18n="nav_how">Qanday ishlaydi</a>
+        <a href="#savollar" data-i18n="nav_faq">Savollar</a>
+        <div class="lang" role="group" aria-label="Til">
+          <button type="button" data-lang="uz">UZ</button>
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
       </div>
     </div>
   </nav>
 
-   <header class="hero" id="top">
+  <header class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <span class="tag">Kichik bizneslar uchun</span>
-        <h1>Kichik biznesingiz <span>internetda</span> ko'rinsin</h1>
-        <p>Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.</p>
+        <span class="tag" data-i18n="tag">Kichik bizneslar uchun</span>
+        <h1 data-i18n-html="h1">Kichik biznesingiz <span>internetda</span> ko'rinsin</h1>
+        <p data-i18n="hero_p">Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim">Bog'lanish</a>
-          <a class="btn btn-ghost" href="dokon.html">Namunani ko'rish</a>
+          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
+          <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
         </div>
       </div>
       <div class="phone" aria-hidden="true">
@@ -50,39 +55,39 @@
   <main>
     <div class="wrap">
       <div class="feats reveal">
-        <div class="feat"><b>Tayyor shablonlar</b><span>Noldan boshlamasdan, tayyor tuzilma bilan.</span></div>
-        <div class="feat"><b>Kodsiz yangilash</b><span>Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
-        <div class="feat"><b>Telefonda qulay</b><span>Har qanday ekranga moslashadi.</span></div>
+        <div class="feat"><b data-i18n="feat1_t">Tayyor shablonlar</b><span data-i18n="feat1_d">Noldan boshlamasdan, tayyor tuzilma bilan.</span></div>
+        <div class="feat"><b data-i18n="feat2_t">Kodsiz yangilash</b><span data-i18n="feat2_d">Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
+        <div class="feat"><b data-i18n="feat3_t">Telefonda qulay</b><span data-i18n="feat3_d">Har qanday ekranga moslashadi.</span></div>
       </div>
     </div>
 
     <section id="shablonlar">
       <div class="wrap">
-        <div class="head reveal"><h2>Shablonlar</h2><p>Biznesingizga mosini tanlang.</p></div>
+        <div class="head reveal"><h2 data-i18n="tpl_h">Shablonlar</h2><p data-i18n="tpl_p">Biznesingizga mosini tanlang.</p></div>
         <div class="bento">
           <div class="tile big reveal">
             <div class="ic" aria-hidden="true">🛒</div>
-            <h3>Do'kon</h3>
-            <p>Mahsulotlar, ish vaqti va manzil.</p>
-            <a class="btn btn-primary" href="dokon.html">Namunani ko'rish</a>
+            <h3 data-i18n="shop_h">Do'kon</h3>
+            <p data-i18n="shop_p">Mahsulotlar, ish vaqti va manzil.</p>
+            <a class="btn btn-primary" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
           </div>
           <div class="tile reveal">
             <div class="ic" aria-hidden="true">📚</div>
-            <h3>O'quv markazi</h3>
-            <p>Kurslar, jadval va ro'yxatdan o'tish.</p>
-            <span class="badge">Tez orada</span>
+            <h3 data-i18n="edu_h">O'quv markazi</h3>
+            <p data-i18n="edu_p">Kurslar, jadval va ro'yxatdan o'tish.</p>
+            <span class="badge" data-i18n="soon">Tez orada</span>
           </div>
           <div class="tile reveal">
             <div class="ic" aria-hidden="true">💼</div>
-            <h3>Xizmat ko'rsatish</h3>
-            <p>Xizmatlar, narxlar va manzil.</p>
-            <span class="badge">Tez orada</span>
+            <h3 data-i18n="svc_h">Xizmat ko'rsatish</h3>
+            <p data-i18n="svc_p">Xizmatlar, narxlar va manzil.</p>
+            <span class="badge" data-i18n="soon">Tez orada</span>
           </div>
           <div class="tile reveal">
             <div class="ic" aria-hidden="true">🛠️</div>
-            <h3>Ustaxona</h3>
-            <p>Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
-           <a class="btn btn-primary" href="dokon.html?biznes=ustaxona">Namunani ko'rish</a>
+            <h3 data-i18n="wk_h">Ustaxona</h3>
+            <p data-i18n="wk_p">Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
+            <a class="btn btn-primary" href="dokon.html?biznes=ustaxona" data-i18n="sample">Namunani ko'rish</a>
           </div>
         </div>
       </div>
@@ -90,32 +95,32 @@
 
     <section id="qanday">
       <div class="wrap">
-        <div class="head reveal"><h2>Qanday ishlaydi</h2><p>Uch oddiy qadam.</p></div>
+        <div class="head reveal"><h2 data-i18n="how_h">Qanday ishlaydi</h2><p data-i18n="how_p">Uch oddiy qadam.</p></div>
         <div class="steps">
-          <div class="step reveal"><span class="num">1</span><p>Shablonni tanlang.</p></div>
-          <div class="step reveal"><span class="num">2</span><p>Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p></div>
-          <div class="step reveal"><span class="num">3</span><p>Saytingiz internetda tayyor bo'ladi.</p></div>
+          <div class="step reveal"><span class="num">1</span><p data-i18n="step1">Shablonni tanlang.</p></div>
+          <div class="step reveal"><span class="num">2</span><p data-i18n="step2">Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p></div>
+          <div class="step reveal"><span class="num">3</span><p data-i18n="step3">Saytingiz internetda tayyor bo'ladi.</p></div>
         </div>
       </div>
     </section>
 
     <section id="savollar">
       <div class="wrap">
-        <div class="head reveal"><h2>Savollar</h2></div>
+        <div class="head reveal"><h2 data-i18n="faq_h">Savollar</h2></div>
         <div class="faq reveal">
-          <details><summary>Qancha turadi?</summary><p>Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.</p></details>
-          <details><summary>Kod bilishim kerakmi?</summary><p>Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.</p></details>
-          <details><summary>Qanday bog'lanaman?</summary><p>Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.</p></details>
+          <details><summary data-i18n="q1">Qancha turadi?</summary><p data-i18n="a1">Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.</p></details>
+          <details><summary data-i18n="q2">Kod bilishim kerakmi?</summary><p data-i18n="a2">Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.</p></details>
+          <details><summary data-i18n="q3">Qanday bog'lanaman?</summary><p data-i18n="a3">Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.</p></details>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.</p>
+    <p data-i18n="footer">SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.</p>
   </footer>
 
-  <a class="float" href="https://t.me/sotvoldiyev_abduhalim" aria-label="Telegram orqali bog'lanish">Telegram</a>
+  <a class="float" href="https://t.me/sotvoldiyev_abduhalim" aria-label="Telegram">Telegram</a>
 
   <script>
     var items = document.querySelectorAll('.reveal');
@@ -130,5 +135,6 @@
       items.forEach(function (el) { el.classList.add('in'); });
     }
   </script>
+  <script src="lang.js"></script>
 </body>
 </html>
