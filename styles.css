@@ -376,3 +376,55 @@ body {
   padding: 11px 22px;
   align-self: flex-start;
 }
+/* ===== 9+ jilolari ===== */
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+::selection{background:var(--orange);color:var(--navy)}
+
+/* Sahifa pastga tushganda tepada to'lib boruvchi chiziq */
+@supports (animation-timeline: scroll()){
+  body::before{content:"";position:fixed;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--orange),#fbbf24);transform-origin:0 50%;transform:scaleX(0);z-index:50;animation:grow linear both;animation-timeline:scroll()}
+  @keyframes grow{to{transform:scaleX(1)}}
+}
+
+/* Bosh blokda sekin suzuvchi yorug'lik dog'lari */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;border-radius:50%;filter:blur(80px);pointer-events:none}
+.hero::before{width:380px;height:380px;left:-90px;top:-130px;background:#f97316;opacity:.45;animation:float1 14s ease-in-out infinite alternate}
+.hero::after{width:340px;height:340px;right:-70px;bottom:-150px;background:#1e4a8a;opacity:.8;animation:float2 16s ease-in-out infinite alternate}
+@keyframes float1{to{transform:translate(60px,40px) scale(1.15)}}
+@keyframes float2{to{transform:translate(-50px,-30px) scale(1.2)}}
+
+/* Tugmalar */
+.btn-primary::after{content:"→";display:inline-block;margin-left:8px;transition:transform .2s}
+.btn-primary:hover::after{transform:translateX(5px)}
+
+/* Menyu scroll'da ixchamlashadi */
+.nav .wrap{transition:height .25s}
+.nav.scrolled .wrap{height:54px}
+.nav.scrolled{background:rgba(7,26,51,.92)}
+
+/* Kartalar */
+.tile.big{position:relative;overflow:hidden}
+.tile.big::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(closest-side,rgba(249,115,22,.6),transparent);pointer-events:none}
+.tile,.card,.feat,.step{box-shadow:0 1px 2px rgba(11,37,69,.04),0 8px 24px rgba(11,37,69,.06)}
+
+/* Savol-javob */
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--orange);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details[open]{border-color:rgba(249,115,22,.4);box-shadow:0 8px 24px rgba(11,37,69,.08)}
+
+/* Pastki qism */
+footer{border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--orange),#fbbf24) 1}
+
+/* Suzuvchi Telegram tugmasi (yengil "puls") */
+.float{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 10px 28px rgba(0,0,0,.25),0 0 0 0 rgba(249,115,22,.5)}50%{box-shadow:0 10px 28px rgba(0,0,0,.25),0 0 0 12px rgba(249,115,22,0)}}
+
+@media(prefers-reduced-motion:reduce){
+  .hero::before,.hero::after,.float{animation:none}
+  body::before{display:none}
+}
