@@ -1,52 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b2545">
-  <title>SME-Digital UZ</title>
   <meta name="description" content="SME-Digital UZ: kichik bizneslar uchun tayyor va arzon veb-sayt shablonlari.">
   <meta property="og:title" content="SME-Digital UZ">
   <meta property="og:description" content="Kichik bizneslar uchun tayyor va arzon veb-sayt shablonlari.">
   <meta property="og:type" content="website">
+  <title>SME-Digital UZ</title>
+
   <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.classList.add('js')</script>
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 <body>
+
+  <!-- NAVIGATION -->
   <nav class="nav">
-    <div class="wrap">
-      <a class="brand" href="#top"><img src="logo-icon.svg" alt="" width="34" height="34"><span>SME-Digital UZ</span></a>
-      <div class="menu">
+    <div class="wrap nav-wrap">
+
+      <a class="brand" href="#top">
+        <img src="logo-icon.svg" alt="" width="34" height="34">
+        <span>SME-Digital UZ</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Menyuni ochish"
+        aria-controls="main-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu" id="main-menu">
         <a href="#shablonlar" data-i18n="nav_templates">Shablonlar</a>
         <a href="#qanday" data-i18n="nav_how">Qanday ishlaydi</a>
         <a href="#savollar" data-i18n="nav_faq">Savollar</a>
+
         <div class="lang" role="group" aria-label="Til">
           <button type="button" data-lang="uz">UZ</button>
           <button type="button" data-lang="ru">RU</button>
           <button type="button" data-lang="en">EN</button>
         </div>
-        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
+
+        <a class="pill" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">
+          Bog'lanish
+        </a>
       </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero" id="top">
     <div class="wrap hero-grid">
-      <div>
+      <div class="hero-content">
         <span class="tag" data-i18n="tag">Kichik bizneslar uchun</span>
-        <h1 data-i18n-html="h1">Kichik biznesingiz <span>internetda</span> ko'rinsin</h1>
-        <p data-i18n="hero_p">Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.</p>
+
+        <h1 data-i18n-html="h1">
+          Kichik biznesingiz <span>internetda</span> ko'rinsin
+        </h1>
+
+        <p data-i18n="hero_p">
+          Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.
+        </p>
+
         <div class="cta">
-          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
-          <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
+          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">
+            Bog'lanish
+          </a>
+          <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">
+            Namunani ko'rish
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          <span data-i18n="hero_note">Kichik biznes uchun sodda raqamli yechim</span>
         </div>
       </div>
+
       <div class="phone" aria-hidden="true">
-        <div class="ph-top"><b data-i18n="ph_name">Namuna Do'kon</b><span data-i18n="ph_sub">Kundalik mahsulotlar</span></div>
+        <div class="ph-top">
+          <b data-i18n="ph_name">Namuna Do'kon</b>
+          <span data-i18n="ph_sub">Kundalik mahsulotlar</span>
+        </div>
+        <div class="ph-product">
+          <span></span><span></span>
+        </div>
         <div class="ph-row"></div>
         <div class="ph-row"></div>
         <div class="ph-row short"></div>
@@ -56,140 +108,379 @@
   </header>
 
   <main>
-    <div class="wrap">
-      <div class="feats reveal">
-        <div class="feat"><b data-i18n="feat1_t">Tayyor shablonlar</b><span data-i18n="feat1_d">Noldan boshlamasdan, tayyor tuzilma bilan.</span></div>
-        <div class="feat"><b data-i18n="feat2_t">Kodsiz yangilash</b><span data-i18n="feat2_d">Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
-        <div class="feat"><b data-i18n="feat3_t">Telefonda qulay</b><span data-i18n="feat3_d">Har qanday ekranga moslashadi.</span></div>
-      </div>
-      <div class="offer reveal">
-        <div>
-          <h3 data-i18n="offer_h">Birinchi namunalar bepul</h3>
-          <p data-i18n="offer_p">Loyiha boshlang'ich bosqichda: kichik biznes egalari uchun birinchi sahifalarni bepul tayyorlayman.</p>
-        </div>
-        <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="offer_btn">Bepul namuna so'rash</a>
-      </div>
-    </div>
-
-    <section id="jonli">
+    <!-- BENEFITS -->
+    <section class="benefits-section">
       <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="live_h">Jonli namuna</h2><p data-i18n="live_p">Shablonni tanlang, sahifa shu yerning o'zida ochiladi.</p></div>
-        <div class="live reveal">
-          <div class="tabs">
-            <button type="button" class="tab on" data-src="dokon.html?biznes=dokon" data-i18n="shop_h">Do'kon</button>
-            <button type="button" class="tab" data-src="dokon.html?biznes=ustaxona" data-i18n="wk_h">Ustaxona</button>
+        <div class="feats reveal">
+          <div class="feat">
+            <div class="feat-number">01</div>
+            <b data-i18n="feat1_t">Tayyor shablonlar</b>
+            <span data-i18n="feat1_d">Noldan boshlamasdan, tayyor tuzilma bilan.</span>
           </div>
-          <div class="device"><div class="screen"><iframe id="preview" src="dokon.html?biznes=dokon" title="Jonli namuna" loading="lazy"></iframe></div></div>
+
+          <div class="feat">
+            <div class="feat-number">02</div>
+            <b data-i18n="feat2_t">Kodsiz yangilash</b>
+            <span data-i18n="feat2_d">Ma'lumot bitta faylda, sahifa undan yasaladi.</span>
+          </div>
+
+          <div class="feat">
+            <div class="feat-number">03</div>
+            <b data-i18n="feat3_t">Telefonda qulay</b>
+            <span data-i18n="feat3_d">Har qanday ekranga moslashadi.</span>
+          </div>
+        </div>
+
+        <!-- OFFER -->
+        <div class="offer reveal">
+          <div class="offer-copy">
+            <span class="eyebrow" data-i18n="offer_label">BOSHLASH UCHUN</span>
+            <h3 data-i18n="offer_h">Birinchi namunalar bepul</h3>
+            <p data-i18n="offer_p">
+              Loyiha boshlang'ich bosqichda: kichik biznes egalari uchun birinchi sahifalarni bepul tayyorlayman.
+            </p>
+          </div>
+
+          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="offer_btn">
+            Bepul namuna so'rash
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="shablonlar">
+    <!-- LIVE DEMO -->
+    <section id="jonli" class="section-live">
       <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="tpl_h">Shablonlar</h2><p data-i18n="tpl_p">Biznesingizga mosini tanlang.</p></div>
+        <div class="head reveal">
+          <span class="eyebrow" data-i18n="live_label">AMALDA KO'RING</span>
+          <h2 data-i18n="live_h">Jonli namuna</h2>
+          <p data-i18n="live_p">
+            Shablonni tanlang, sahifa shu yerning o'zida ochiladi.
+          </p>
+        </div>
+
+        <div class="live reveal">
+          <div class="tabs" role="group" aria-label="Namuna tanlash">
+            <button
+              type="button"
+              class="tab on"
+              data-src="dokon.html?biznes=dokon"
+              aria-pressed="true"
+              data-i18n="shop_h"
+            >Do'kon</button>
+
+            <button
+              type="button"
+              class="tab"
+              data-src="dokon.html?biznes=ustaxona"
+              aria-pressed="false"
+              data-i18n="wk_h"
+            >Ustaxona</button>
+          </div>
+
+          <div class="device">
+            <div class="device-camera"></div>
+            <div class="screen">
+              <iframe
+                id="preview"
+                src="dokon.html?biznes=dokon"
+                title="SME-Digital UZ jonli veb-sayt namunasi"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <p class="demo-caption" data-i18n="demo_caption">
+            Namuna bilan tanishing va biznesingizga mosini tanlang.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMPLATES -->
+    <section id="shablonlar" class="section-templates">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow" data-i18n="tpl_label">BIZNESINGIZ UCHUN</span>
+          <h2 data-i18n="tpl_h">Shablonlar</h2>
+          <p data-i18n="tpl_p">Biznesingizga mosini tanlang.</p>
+        </div>
+
         <div class="bento">
-          <div class="tile big reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/></svg></div>
+          <article class="tile big reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/>
+              </svg>
+            </div>
+            <span class="tile-kicker" data-i18n="shop_kicker">SAVDO</span>
             <h3 data-i18n="shop_h">Do'kon</h3>
             <p data-i18n="shop_p">Mahsulotlar, ish vaqti va manzil.</p>
             <a class="btn btn-primary" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
-          </div>
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>
+              </svg>
+            </div>
+            <span class="tile-kicker" data-i18n="edu_kicker">TA'LIM</span>
             <h3 data-i18n="edu_h">O'quv markazi</h3>
             <p data-i18n="edu_p">Kurslar, jadval va ro'yxatdan o'tish.</p>
             <span class="badge" data-i18n="soon">Tez orada</span>
-          </div>
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8h18v12H3zM8 8V5h8v3M3 13h18"/></svg></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 8h18v12H3zM8 8V5h8v3M3 13h18"/>
+              </svg>
+            </div>
+            <span class="tile-kicker" data-i18n="svc_kicker">XIZMAT</span>
             <h3 data-i18n="svc_h">Xizmat ko'rsatish</h3>
             <p data-i18n="svc_p">Xizmatlar, narxlar va manzil.</p>
             <span class="badge" data-i18n="soon">Tez orada</span>
-          </div>
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-.6-.6-2.1z"/></svg></div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-.6-.6-2.1z"/>
+              </svg>
+            </div>
+            <span class="tile-kicker" data-i18n="wk_kicker">USTAXONA</span>
             <h3 data-i18n="wk_h">Ustaxona</h3>
             <p data-i18n="wk_p">Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
             <a class="btn btn-primary" href="dokon.html?biznes=ustaxona" data-i18n="sample">Namunani ko'rish</a>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="qanday">
+    <!-- HOW IT WORKS -->
+    <section id="qanday" class="section-how">
       <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="how_h">Qanday ishlaydi</h2><p data-i18n="how_p">Uch oddiy qadam.</p></div>
+        <div class="head reveal">
+          <span class="eyebrow" data-i18n="how_label">JARAYON</span>
+          <h2 data-i18n="how_h">Qanday ishlaydi</h2>
+          <p data-i18n="how_p">Uch oddiy qadam.</p>
+        </div>
+
         <div class="steps">
-          <div class="step reveal"><span class="num">1</span><p data-i18n="step1">Shablonni tanlang.</p></div>
-          <div class="step reveal"><span class="num">2</span><p data-i18n="step2">Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p></div>
-          <div class="step reveal"><span class="num">3</span><p data-i18n="step3">Saytingiz internetda tayyor bo'ladi.</p></div>
+          <div class="step reveal">
+            <span class="num">01</span>
+            <h3 data-i18n="step1_h">Shablonni tanlang</h3>
+            <p data-i18n="step1">Shablonni tanlang.</p>
+          </div>
+
+          <div class="step reveal">
+            <span class="num">02</span>
+            <h3 data-i18n="step2_h">Ma'lumot yuboring</h3>
+            <p data-i18n="step2">Biznesingiz ma'lumotlarini yuboring: nomi, mahsulotlar, aloqa.</p>
+          </div>
+
+          <div class="step reveal">
+            <span class="num">03</span>
+            <h3 data-i18n="step3_h">Saytingizni tayyorlang</h3>
+            <p data-i18n="step3">Saytingiz internetda tayyor bo'ladi.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="savollar">
+    <!-- FAQ -->
+    <section id="savollar" class="section-faq">
       <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="faq_h">Savollar</h2></div>
+        <div class="head reveal">
+          <span class="eyebrow" data-i18n="faq_label">YORDAM</span>
+          <h2 data-i18n="faq_h">Savollar</h2>
+        </div>
+
         <div class="faq reveal">
-          <details><summary data-i18n="q1">Qancha turadi?</summary><p data-i18n="a1">Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.</p></details>
-          <details><summary data-i18n="q2">Kod bilishim kerakmi?</summary><p data-i18n="a2">Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.</p></details>
-          <details><summary data-i18n="q3">Qanday bog'lanaman?</summary><p data-i18n="a3">Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.</p></details>
+          <details>
+            <summary data-i18n="q1">Qancha turadi?</summary>
+            <p data-i18n="a1">
+              Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.
+            </p>
+          </details>
+
+          <details>
+            <summary data-i18n="q2">Kod bilishim kerakmi?</summary>
+            <p data-i18n="a2">
+              Yo'q. Biznes ma'lumotlari bitta oddiy faylda turadi, sahifa shundan yasaladi.
+            </p>
+          </details>
+
+          <details>
+            <summary data-i18n="q3">Qanday bog'lanaman?</summary>
+            <p data-i18n="a3">
+              Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.
+            </p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section id="natija">
+    <!-- PROJECT STATUS -->
+    <section id="natija" class="section-status">
       <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="nat_h">Loyiha holati</h2></div>
-        <div class="bento">
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <div class="head reveal">
+          <span class="eyebrow" data-i18n="nat_label">KEYINGI QADAMLAR</span>
+          <h2 data-i18n="nat_h">Loyiha holati</h2>
+        </div>
+
+        <div class="status-grid">
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+            </div>
             <h3 data-i18n="nat1_h">Maqsad</h3>
-            <p data-i18n="nat1_p">Farg'ona viloyatidagi kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari.</p>
-          </div>
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div>
+            <p data-i18n="nat1_p">
+              Farg'ona viloyatidagi kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari.
+            </p>
+          </article>
+
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12l5 5 9-10"/>
+              </svg>
+            </div>
             <h3 data-i18n="nat2_h">Hozirgi holat</h3>
-            <p data-i18n="nat2_p">Bosh sahifa va ikkita namuna shablon (do'kon va ustaxona) internetda.</p>
-          </div>
-          <div class="tile reveal">
-            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 10h18M8 3v4M16 3v4"/></svg></div>
+            <p data-i18n="nat2_p">
+              Bosh sahifa va ikkita namuna shablon — do'kon va ustaxona — internetda.
+            </p>
+          </article>
+
+          <article class="tile reveal">
+            <div class="ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 5h18v16H3zM3 10h18M8 3v4M16 3v4"/>
+              </svg>
+            </div>
             <h3 data-i18n="nat3_h">Rejada</h3>
-            <p data-i18n="nat3_p">Birinchi haqiqiy biznes sahifasi va maktab o'quvchilari uchun raqamli savodxonlik bo'yicha taqdimotlar.</p>
-          </div>
+            <p data-i18n="nat3_p">
+              Birinchi haqiqiy biznes sahifasi va maktab o'quvchilari uchun raqamli savodxonlik bo'yicha taqdimotlar.
+            </p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p data-i18n="footer">SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="#top">SME-Digital UZ</a>
+      <p data-i18n="footer">
+        SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.
+      </p>
+      <a class="footer-top" href="#top" data-i18n="back_top">Yuqoriga ↑</a>
+    </div>
   </footer>
 
-  <a class="float" href="https://t.me/sotvoldiyev_abduhalim" aria-label="Telegram">Telegram</a>
+  <a class="float" href="https://t.me/sotvoldiyev_abduhalim" aria-label="Telegram">
+    <span class="float-icon" aria-hidden="true">↗</span>
+    <span>Telegram</span>
+  </a>
 
+  <!-- PAGE SCRIPTS -->
   <script>
+    // Reveal animations
     var items = document.querySelectorAll('.reveal');
+
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
         });
       }, { threshold: 0.12 });
-      items.forEach(function (el) { io.observe(el); });
+
+      items.forEach(function (item) {
+        io.observe(item);
+      });
     } else {
-      items.forEach(function (el) { el.classList.add('in'); });
+      items.forEach(function (item) {
+        item.classList.add('in');
+      });
     }
-    window.addEventListener('scroll', function () {
-      document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 20);
-    }, { passive: true });
-    document.querySelectorAll('.tab').forEach(function (t) {
-      t.addEventListener('click', function () {
-        document.getElementById('preview').src = t.getAttribute('data-src');
-        document.querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === t); });
+
+    // Sticky navigation appearance
+    var nav = document.querySelector('.nav');
+
+    function updateNav() {
+      if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+      }
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+    // Mobile navigation
+    var menuToggle = document.querySelector('.menu-toggle');
+    var mainMenu = document.querySelector('#main-menu');
+
+    function closeMenu() {
+      if (!menuToggle || !mainMenu) return;
+
+      mainMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Menyuni ochish');
+    }
+
+    if (menuToggle && mainMenu) {
+      menuToggle.addEventListener('click', function () {
+        var isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        menuToggle.setAttribute(
+          'aria-label',
+          isOpen ? 'Menyuni ochish' : 'Menyuni yopish'
+        );
+
+        mainMenu.classList.toggle('open', !isOpen);
+      });
+
+      mainMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 640) closeMenu();
+      });
+    }
+
+    // Live demo tabs
+    var preview = document.getElementById('preview');
+    var tabs = document.querySelectorAll('.tab');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        if (preview) {
+          preview.src = tab.getAttribute('data-src');
+        }
+
+        tabs.forEach(function (otherTab) {
+          var active = otherTab === tab;
+          otherTab.classList.toggle('on', active);
+          otherTab.setAttribute('aria-pressed', String(active));
+        });
       });
     });
   </script>
+
   <script src="lang.js"></script>
 </body>
 </html>
