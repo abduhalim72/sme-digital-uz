@@ -10,6 +10,9 @@
   <meta property="og:description" content="Kichik bizneslar uchun tayyor va arzon veb-sayt shablonlari.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -43,11 +46,11 @@
         </div>
       </div>
       <div class="phone" aria-hidden="true">
-        <div class="ph-top"><b>Namuna Do'kon</b><span>Kundalik mahsulotlar</span></div>
+        <div class="ph-top"><b data-i18n="ph_name">Namuna Do'kon</b><span data-i18n="ph_sub">Kundalik mahsulotlar</span></div>
         <div class="ph-row"></div>
         <div class="ph-row"></div>
         <div class="ph-row short"></div>
-        <div class="ph-btn">Bog'lanish</div>
+        <div class="ph-btn" data-i18n="nav_contact">Bog'lanish</div>
       </div>
     </div>
   </header>
@@ -59,60 +62,60 @@
         <div class="feat"><b data-i18n="feat2_t">Kodsiz yangilash</b><span data-i18n="feat2_d">Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
         <div class="feat"><b data-i18n="feat3_t">Telefonda qulay</b><span data-i18n="feat3_d">Har qanday ekranga moslashadi.</span></div>
       </div>
-    </div>
-
-        <div class="wrap">
       <div class="offer reveal">
         <div>
-          <h3>Birinchi namunalar bepul</h3>
-          <p>Loyiha boshlang'ich bosqichda: kichik biznes egalari uchun birinchi sahifalarni bepul tayyorlayman.</p>
+          <h3 data-i18n="offer_h">Birinchi namunalar bepul</h3>
+          <p data-i18n="offer_p">Loyiha boshlang'ich bosqichda: kichik biznes egalari uchun birinchi sahifalarni bepul tayyorlayman.</p>
         </div>
-        <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim">Bepul namuna so'rash</a>
+        <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="offer_btn">Bepul namuna so'rash</a>
       </div>
     </div>
- <section id="shablonlar">
-  <div class="wrap">
-    <div class="head reveal">
-      <h2 data-i18n="tpl_h">Shablonlar</h2>
-      <p data-i18n="tpl_p">Biznesingizga mosini tanlang.</p>
-    </div>
 
-    <div class="bento">
-      <!-- Do'kon -->
-      <div class="tile reveal">
-        <div class="ic">🛒</div>
-        <h3 data-i18n="shop_h">Do'kon</h3>
-        <p data-i18n="shop_p">Mahsulotlar, ish vaqti va manzil.</p>
-        <a class="btn btn-primary" href="dokon.html?biznes=dokon" data-i18n="sample">Namunani ko'rish</a>
+    <section id="jonli">
+      <div class="wrap">
+        <div class="head reveal"><h2 data-i18n="live_h">Jonli namuna</h2><p data-i18n="live_p">Shablonni tanlang, sahifa shu yerning o'zida ochiladi.</p></div>
+        <div class="live reveal">
+          <div class="tabs">
+            <button type="button" class="tab on" data-src="dokon.html?biznes=dokon" data-i18n="shop_h">Do'kon</button>
+            <button type="button" class="tab" data-src="dokon.html?biznes=ustaxona" data-i18n="wk_h">Ustaxona</button>
+          </div>
+          <div class="device"><div class="screen"><iframe id="preview" src="dokon.html?biznes=dokon" title="Jonli namuna" loading="lazy"></iframe></div></div>
+        </div>
       </div>
+    </section>
 
-      <!-- O'quv markazi -->
-      <div class="tile reveal">
-        <div class="ic">📚</div>
-        <h3 data-i18n="edu_h">O'quv markazi</h3>
-        <p data-i18n="edu_p">Kurslar, jadval va ro'yxatdan o'tish.</p>
-        <a class="btn btn-primary" href="dokon.html?biznes=oquv" data-i18n="sample">Namunani ko'rish</a>
+    <section id="shablonlar">
+      <div class="wrap">
+        <div class="head reveal"><h2 data-i18n="tpl_h">Shablonlar</h2><p data-i18n="tpl_p">Biznesingizga mosini tanlang.</p></div>
+        <div class="bento">
+          <div class="tile big reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/></svg></div>
+            <h3 data-i18n="shop_h">Do'kon</h3>
+            <p data-i18n="shop_p">Mahsulotlar, ish vaqti va manzil.</p>
+            <a class="btn btn-primary" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></div>
+            <h3 data-i18n="edu_h">O'quv markazi</h3>
+            <p data-i18n="edu_p">Kurslar, jadval va ro'yxatdan o'tish.</p>
+            <span class="badge" data-i18n="soon">Tez orada</span>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8h18v12H3zM8 8V5h8v3M3 13h18"/></svg></div>
+            <h3 data-i18n="svc_h">Xizmat ko'rsatish</h3>
+            <p data-i18n="svc_p">Xizmatlar, narxlar va manzil.</p>
+            <span class="badge" data-i18n="soon">Tez orada</span>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-.6-.6-2.1z"/></svg></div>
+            <h3 data-i18n="wk_h">Ustaxona</h3>
+            <p data-i18n="wk_p">Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
+            <a class="btn btn-primary" href="dokon.html?biznes=ustaxona" data-i18n="sample">Namunani ko'rish</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Xizmat ko'rsatish -->
-      <div class="tile reveal">
-        <div class="ic">💼</div>
-        <h3 data-i18n="svc_h">Xizmat ko'rsatish</h3>
-        <p data-i18n="svc_p">Xizmatlar, narxlar va manzil.</p>
-        <a class="btn btn-primary" href="dokon.html?biznes=xizmat" data-i18n="sample">Namunani ko'rish</a>
-      </div>
-
-      <!-- Ustaxona -->
-      <div class="tile reveal">
-        <div class="ic">🛠️</div>
-        <h3 data-i18n="wk_h">Ustaxona</h3>
-        <p data-i18n="wk_p">Xizmatlar, ish namunalari va buyurtma uchun aloqa.</p>
-        <a class="btn btn-primary" href="dokon.html?biznes=ustaxona" data-i18n="sample">Namunani ko'rish</a>
-      </div>
-    </div>
-  </div>
-</section>
-  
     <section id="qanday">
       <div class="wrap">
         <div class="head reveal"><h2 data-i18n="how_h">Qanday ishlaydi</h2><p data-i18n="how_p">Uch oddiy qadam.</p></div>
@@ -131,6 +134,29 @@
           <details><summary data-i18n="q1">Qancha turadi?</summary><p data-i18n="a1">Loyiha boshlang'ich bosqichda. Birinchi namunalar bepul tayyorlanmoqda, narxlar keyinroq e'lon qilinadi.</p></details>
           <details><summary data-i18n="q2">Kod bilishim kerakmi?</summary><p data-i18n="a2">Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.</p></details>
           <details><summary data-i18n="q3">Qanday bog'lanaman?</summary><p data-i18n="a3">Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="natija">
+      <div class="wrap">
+        <div class="head reveal"><h2 data-i18n="nat_h">Loyiha holati</h2></div>
+        <div class="bento">
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+            <h3 data-i18n="nat1_h">Maqsad</h3>
+            <p data-i18n="nat1_p">Farg'ona viloyatidagi kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari.</p>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div>
+            <h3 data-i18n="nat2_h">Hozirgi holat</h3>
+            <p data-i18n="nat2_p">Bosh sahifa va ikkita namuna shablon (do'kon va ustaxona) internetda.</p>
+          </div>
+          <div class="tile reveal">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v16H3zM3 10h18M8 3v4M16 3v4"/></svg></div>
+            <h3 data-i18n="nat3_h">Rejada</h3>
+            <p data-i18n="nat3_p">Birinchi haqiqiy biznes sahifasi va maktab o'quvchilari uchun raqamli savodxonlik bo'yicha taqdimotlar.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -154,47 +180,16 @@
     } else {
       items.forEach(function (el) { el.classList.add('in'); });
     }
-  </script>
-  <script src="lang.js"></script>
- <script>
-  function openDemo(biznesType) {
-    // Hozirgi tanlangan tilni localStorage yoki URL'dan olamiz
-    const currentLang = localStorage.getItem("sme_lang") || "uz";
-
-    // Yangi sahifaga til va biznes turini birga uzatamiz
-    window.location.href = `dokon.html?biznes=${biznesType}&lang=${currentLang}`;
-  }
-</script>
-<section class="impact-section">
-  <div class="wrap">
-    <h2 class="section-title">Loyiha Natijalari (Impact)</h2>
-    <div class="impact-grid">
-      
-      <div class="impact-card">
-        <div class="icon-box">🤝</div>
-        <h3>Mahalliy Bizneslar Hamkorligi</h3>
-        <p>Farg'ona viloyatidagi kichik bizneslar uchun bepul raqamli yechimlar va shablonlar.</p>
-      </div>
-
-      <div class="impact-card">
-        <div class="icon-box">🚀</div>
-        <h3>Faol Loyihalar</h3>
-        <p>Do'konlar va o'quv markazlari uchun mo'ljallangan tayyor namuna sahifalari.</p>
-      </div>
-
-      <div class="impact-card">
-        <div class="icon-box">🎓</div>
-        <h3>O'qituvchilar Uchun Treninglar</h3>
-        <p>Kiberxavfsizlik va raqamli savodxonlik bo'yicha maktablarda o'tkazilgan taqdimotlar.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-  <script>
     window.addEventListener('scroll', function () {
       document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
+    document.querySelectorAll('.tab').forEach(function (t) {
+      t.addEventListener('click', function () {
+        document.getElementById('preview').src = t.getAttribute('data-src');
+        document.querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === t); });
+      });
+    });
   </script>
+  <script src="lang.js"></script>
 </body>
 </html>
