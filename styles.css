@@ -428,3 +428,6 @@ footer{border-top:3px solid transparent;border-image:linear-gradient(90deg,var(-
   .hero::before,.hero::after,.float{animation:none}
   body::before{display:none}
 }
+.offer{margin-top:56px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;text-align:left;padding:28px;border-radius:24px;color:#fff;background:radial-gradient(420px 200px at 100% 0%,rgba(249,115,22,.35),transparent 70%),var(--navy)}
+.offer h3{margin:0 0 6px;font-size:1.4rem}
+.offer p{margin:0;color:#cfd9e8;max-width:520px}
