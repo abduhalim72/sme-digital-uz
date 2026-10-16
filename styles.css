@@ -140,3 +140,17 @@ footer{margin-top:84px;background:var(--ink);color:#9fb0c7;padding:34px 20px;bor
 @media(max-width:899px){.phone{display:none}}
 @media(max-width:640px){.menu a:not(.pill){display:none}.brand span{display:none}.hero{padding:72px 0 96px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.hero::before,.hero::after,.float{animation:none}body::before{display:none}.js .reveal{opacity:1;transform:none}}
+/* Jonli fon */
+body{
+  background:
+    radial-gradient(900px 520px at 88% 640px, rgba(249,115,22,.12), transparent 62%),
+    radial-gradient(800px 520px at 4% 1500px, rgba(30,74,138,.10), transparent 62%),
+    radial-gradient(700px 480px at 92% 2300px, rgba(249,115,22,.09), transparent 62%),
+    radial-gradient(rgba(11,37,69,.08) 1px, transparent 1px) 0 0/26px 26px,
+    var(--cream);
+}
+
+#jonli{
+  padding-bottom:76px;
+  background:linear-gradient(180deg,transparent,rgba(249,115,22,.07) 50%,transparent);
+}
