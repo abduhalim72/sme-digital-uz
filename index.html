@@ -20,6 +20,13 @@
   <script>
     document.documentElement.classList.add('js');
   </script>
+  <style>
+@media(min-width:640px){.feats,.steps,.grid{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:1fr 1fr}}
+@media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}.tile.big{grid-row:span 2}}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.25fr .75fr;text-align:left}.hero h1,.hero p{margin-left:0;margin-right:0}.hero .cta{justify-content:flex-start}}
+@media(max-width:899px){.phone{display:none}}
+@media(max-width:640px){.menu a:not(.pill){display:none}.brand span{display:none}.hero{padding:72px 0 96px}}
+</style>
 </head>
 <body>
 
