@@ -26,10 +26,11 @@ const T = {
     q2: "Kod bilishim kerakmi?", a2: "Yo'q. Biznes ma'lumotlari (nomi, mahsulotlar, aloqa) bitta oddiy faylda turadi, sahifa shundan o'zi yasaladi.",
     q3: "Qanday bog'lanaman?", a3: "Telegram orqali yozing, tugma sahifaning tepasida va pastki burchagida.",
     nat_h: "Loyiha holati",
-    nat1_h: "Maqsad", nat1_p: "Farg'ona viloyatidagi kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari.",
+    nat1_h: "Maqsad", nat1_p: "O'zbekiston bo'ylab kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari. Boshlanishi: Farg'ona viloyati.",
     nat2_h: "Hozirgi holat", nat2_p: "Bosh sahifa va ikkita namuna shablon (do'kon va ustaxona) internetda.",
     nat3_h: "Rejada", nat3_p: "Birinchi haqiqiy biznes sahifasi va maktab o'quvchilari uchun raqamli savodxonlik bo'yicha taqdimotlar.",
-    footer: "SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar."
+    footer: "SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.",
+    foot_note: "Bosh blokdagi rasm sun'iy intellekt yordamida yaratilgan."
   },
   ru: {
     nav_templates: "Шаблоны", nav_how: "Как это работает", nav_faq: "Вопросы", nav_contact: "Связаться",
@@ -58,10 +59,11 @@ const T = {
     q2: "Нужно ли уметь программировать?", a2: "Нет. Данные бизнеса (название, товары, контакты) хранятся в одном простом файле, страница создаётся из него.",
     q3: "Как связаться?", a3: "Напишите в Telegram: кнопка вверху страницы и в правом нижнем углу.",
     nat_h: "Состояние проекта",
-    nat1_h: "Цель", nat1_p: "Доступные готовые шаблоны сайтов для малого бизнеса Ферганской области.",
+    nat1_h: "Цель", nat1_p: "Доступные готовые шаблоны сайтов для малого бизнеса по всему Узбекистану. Старт: Ферганская область.",
     nat2_h: "Сейчас", nat2_p: "Главная страница и два примера шаблонов (магазин и мастерская) уже в интернете.",
     nat3_h: "В планах", nat3_p: "Страница первого реального бизнеса и презентации по цифровой грамотности для школьников.",
-    footer: "SME-Digital UZ. Цифровые решения для малого бизнеса."
+    footer: "SME-Digital UZ. Цифровые решения для малого бизнеса.",
+    foot_note: "Изображение в верхнем блоке создано с помощью ИИ."
   },
   en: {
     nav_templates: "Templates", nav_how: "How it works", nav_faq: "FAQ", nav_contact: "Contact",
@@ -90,10 +92,11 @@ const T = {
     q2: "Do I need to know how to code?", a2: "No. Your business details (name, products, contacts) live in one simple file, and the page is built from it.",
     q3: "How do I get in touch?", a3: "Message us on Telegram. The button is at the top of the page and in the bottom corner.",
     nat_h: "Project status",
-    nat1_h: "Goal", nat1_p: "Affordable, ready-made website templates for small businesses in the Fergana region.",
+    nat1_h: "Goal", nat1_p: "Affordable, ready-made website templates for small businesses across Uzbekistan, starting in the Fergana region.",
     nat2_h: "Current status", nat2_p: "The landing page and two sample templates (shop and workshop) are online.",
     nat3_h: "Planned", nat3_p: "A first real business page and digital literacy presentations for school students.",
-    footer: "SME-Digital UZ. Digital solutions for small businesses."
+    footer: "SME-Digital UZ. Digital solutions for small businesses.",
+    foot_note: "The header image was created with AI."
   }
 };
 

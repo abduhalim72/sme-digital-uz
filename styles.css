@@ -1111,3 +1111,4 @@ footer p {
 @media(max-width:899px){.phone{display:none}}
 @media(max-width:640px){.menu a:not(.pill){display:none}.brand span{display:none}.hero{padding:72px 0 96px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.hero::before,.hero::after,.float{animation:none}body::before{display:none}.js .reveal{opacity:1;transform:none}}
+.small{margin:10px 0 0;font-size:.8rem;opacity:.7}
