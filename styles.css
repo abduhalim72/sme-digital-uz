@@ -76,32 +76,37 @@ button:focus-visible {
   @keyframes grow { to { transform: scaleX(1); } }
 }
 
-/* ========== NAV ========== */
+/* ========== NAV (Unlock uslubida - rasm ustida) ========== */
 .nav {
-  position: sticky;
+  position: absolute;          /* sticky o‘rniga absolute */
   top: 0;
-  z-index: 20;
-  background: rgba(7, 26, 51, 0.82);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  transition: background 0.25s, height 0.25s;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: transparent;     /* toza shaffof */
+  border-bottom: none;
+  transition: background 0.3s ease;
 }
 
 .nav .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
-  transition: height 0.25s;
+  height: 72px;
 }
 
+/* Scroll qilganda biroz qorayadi */
 .nav.scrolled {
-  background: rgba(7, 26, 51, 0.94);
+  position: fixed;
+  background: rgba(5, 13, 26, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.nav.scrolled .wrap { height: 58px; }
-
+.nav.scrolled .wrap {
+  height: 60px;
+}
 .brand {
   display: flex;
   align-items: center;
