@@ -192,7 +192,8 @@ button:focus-visible {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fff;
   background: #050d1a;
   overflow: hidden;
@@ -215,7 +216,10 @@ button:focus-visible {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: 120px 0 100px;
+  padding: 120px 0 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .hero-content {
@@ -262,6 +266,97 @@ button:focus-visible {
   gap: 14px;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+/* ========== TRUST (hero pastida) ========== */
+.trust {
+  position: relative;
+  z-index: 3;
+  padding: 22px 0;
+  background: rgba(5, 13, 26, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.trust-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  align-items: center;
+}
+
+.trust-item {
+  text-align: center;
+  padding: 8px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trust-item:last-child {
+  border-right: none;
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #f97316;
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+  line-height: 1.15;
+}
+
+.trust-item span {
+  display: block;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Feats */
+.feats {
+  margin-top: 48px !important;
+  position: relative;
+  z-index: 5;
+}
+
+/* Mobil */
+@media (max-width: 899px) {
+  .hero::before {
+    background:
+      linear-gradient(180deg,
+        rgba(5, 13, 26, 0.9) 0%,
+        rgba(5, 13, 26, 0.78) 100%),
+      url("hero2.jpg") center / cover no-repeat;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-inner {
+    padding: 100px 0 40px;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 9vw, 3.4rem);
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .trust-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trust-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 10px;
+  }
+  .trust-item:nth-child(3),
+  .trust-item:nth-child(4) {
+    border-bottom: none;
+  }
+  .trust-item strong {
+    font-size: 1.3rem;
+  }
 }
 
 /* ========== BUTTONS ========== */
