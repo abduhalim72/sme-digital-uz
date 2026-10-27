@@ -24,6 +24,11 @@
   .small{margin:10px 0 0;font-size:.8rem;opacity:.7}
     .about{max-width:720px;margin:0 auto;text-align:left;font-size:1.08rem;line-height:1.75;border-left:4px solid var(--orange);padding-left:22px}
   .about p{margin:0 0 14px;color:var(--text)}
+    .statband{background:var(--ink);padding:36px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 12px;text-align:center}
+  .stat b{display:block;font-size:clamp(2rem,5vw,3.1rem);font-weight:800;line-height:1.05;background:linear-gradient(90deg,#f97316,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{display:block;margin-top:8px;color:#cfd9e8;font-size:.95rem}
+  @media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}.stat+.stat{border-left:1px solid rgba(255,255,255,.14)}}
   </style>
 </head>
 <body>
@@ -64,6 +69,16 @@
     </div>
   </div>
 </header>
+  <div class="statband">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><b>2</b><span data-i18n="st1">Tayyor shablon</span></div>
+        <div class="stat"><b>3</b><span data-i18n="st2">Til: UZ / RU / EN</span></div>
+        <div class="stat"><b>0 so'm</b><span data-i18n="st3">Birinchi namuna</span></div>
+        <div class="stat"><b data-i18n="st4n">Farg'ona</b><span data-i18n="st4">Boshlanish nuqtasi</span></div>
+      </div>
+    </div>
+  </div>
 <!-- Trust strip (Stripe uslubida) -->
 <section class="trust">
   <div class="wrap trust-inner">

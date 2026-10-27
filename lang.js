@@ -34,6 +34,7 @@ const T = {
     about_1: "Bu loyiha mahallamizdagi kichik do'kondan boshlandi. Do'konda mijoz kam va savdo sust edi, odamlar esa vaqtining ko'pini internetda o'tkazardi. Egasi esa qimmat reklamaga pul sarflay olmasdi.",
     about_2: "Men kollejda kompyuter grafikasi va dizayn o'qiyman. Shu muammoga arzon va tayyor yechim topish uchun SME-Digital UZ ni boshladim: kichik biznes egasi murakkab kodsiz o'z sahifasini olishi mumkin.",
     about_3: "Hozir loyiha boshlang'ich bosqichda: bosh sahifa va ikkita namuna shablon tayyor, birinchi haqiqiy biznes sahifasini yaratishga tayyorlanyapman.",
+     st1: "Tayyor shablon", st2: "Til: UZ / RU / EN", st3: "Birinchi namuna", st4n: "Farg'ona", st4: "Boshlanish nuqtasi",
     footer: "SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.",
     foot_note: "Bosh blokdagi rasm sun'iy intellekt yordamida yaratilgan."
   },
@@ -72,6 +73,8 @@ const T = {
     about_1: "Этот проект начался с небольшого магазина в нашем районе. Покупателей там было мало, продажи шли вяло, а люди проводили большую часть времени в интернете. Хозяин не мог тратить деньги на дорогую рекламу.",
     about_2: "Я учусь в колледже по направлению «Компьютерная графика и дизайн». Чтобы найти доступное и готовое решение этой проблемы, я начал SME-Digital UZ: владелец малого бизнеса может получить свою страницу без сложного кода.",
     about_3: "Сейчас проект на начальном этапе: готовы главная страница и два примера шаблонов, я готовлюсь создать первую страницу для реального бизнеса.",
+        st1: "Готовых шаблона", st2: "Языка: UZ / RU / EN", st3: "Первый пример", st4n: "Фергана", st4: "Точка старта",
+
     footer: "SME-Digital UZ. Цифровые решения для малого бизнеса.",
     foot_note: "Изображение в верхнем блоке создано с помощью ИИ."
   },
@@ -110,6 +113,7 @@ const T = {
     about_1: "This project began with a small shop in our neighbourhood. It had few customers and weak sales, while people spent most of their time online. The owner could not afford expensive advertising.",
     about_2: "I study Computer Graphics and Design at college. To find an affordable, ready-made solution to this problem, I started SME-Digital UZ: a small business owner can get their own page without complex code.",
     about_3: "The project is at an early stage: the landing page and two sample templates are ready, and I am preparing to build the first page for a real business.",
+        st1: "Ready templates", st2: "Languages: UZ / RU / EN", st3: "First sample", st4n: "Fergana", st4: "Starting point",
     footer: "SME-Digital UZ. Digital solutions for small businesses.",
     foot_note: "The header image was created with AI."
   }
