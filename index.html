@@ -16,15 +16,23 @@
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
   <style>
-  .feats,.steps,.bento,.grid{display:grid;gap:16px;grid-template-columns:1fr}
-  .feats{margin-top:-52px;position:relative}
-  .info{display:grid;gap:16px;grid-template-columns:1fr;max-width:760px;margin:0 auto}
-  @media(min-width:640px){.feats,.steps,.grid{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:1fr 1fr}}
+  .steps,.bento,.grid{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.steps,.grid{grid-template-columns:repeat(3,1fr)}}
   @media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}.tile.big{grid-row:span 2}}
   .small{margin:10px 0 0;font-size:.8rem;opacity:.7}
-    .about{max-width:720px;margin:0 auto;text-align:left;font-size:1.08rem;line-height:1.75;border-left:4px solid var(--orange);padding-left:22px}
+  .about{max-width:720px;margin:0 auto;text-align:left;font-size:1.08rem;line-height:1.75;border-left:4px solid var(--orange);padding-left:22px}
   .about p{margin:0 0 14px;color:var(--text)}
-    .statband{background:var(--ink);padding:36px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav:not(.scrolled){background:transparent;border-bottom-color:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+  #top.hero{margin-top:-64px;padding:170px 0 120px;min-height:88vh;display:flex;align-items:center;text-align:left;background:linear-gradient(90deg,rgba(7,26,51,.98) 0%,rgba(7,26,51,.90) 30%,rgba(7,26,51,.30) 52%,rgba(7,26,51,0) 70%),url("hero2.jpg") right -8vw center/auto 100% no-repeat,var(--navy)}
+  #top.hero .wrap{width:100%}
+  #top.hero h1{max-width:540px;margin-left:0;margin-right:0;font-size:clamp(2.3rem,4.6vw,4.2rem);text-shadow:0 2px 24px rgba(0,0,0,.35)}
+  #top.hero p{max-width:460px;margin-left:0;margin-right:0}
+  #top .cta{justify-content:flex-start}
+  #top .btn{border-radius:14px}
+  .menu .pill{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+  .nav.scrolled .menu .pill{background:var(--orange);color:var(--navy);border-color:var(--orange)}
+  @media(max-width:999px){#top.hero{background:linear-gradient(180deg,rgba(7,26,51,.85),rgba(7,26,51,.62)),url("hero2.jpg") center/cover no-repeat,var(--navy)}#top.hero h1{max-width:none}}
+  .statband{background:var(--ink);padding:36px 0;border-bottom:1px solid rgba(255,255,255,.08)}
   .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 12px;text-align:center}
   .stat b{display:block;font-size:clamp(2rem,5vw,3.1rem);font-weight:800;line-height:1.05;background:linear-gradient(90deg,#f97316,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
   .stat span{display:block;margin-top:8px;color:#cfd9e8;font-size:.95rem}
@@ -36,7 +44,7 @@
     <div class="wrap">
       <a class="brand" href="#top"><img src="logo-icon.svg" alt="" width="34" height="34"><span>SME-Digital UZ</span></a>
       <div class="menu">
-                <a href="#haqida" data-i18n="nav_about">Loyiha haqida</a>
+        <a href="#haqida" data-i18n="nav_about">Loyiha haqida</a>
         <a href="#shablonlar" data-i18n="nav_templates">Shablonlar</a>
         <a href="#qanday" data-i18n="nav_how">Qanday ishlaydi</a>
         <a href="#savollar" data-i18n="nav_faq">Savollar</a>
@@ -50,25 +58,18 @@
     </div>
   </nav>
 
-<header class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="hero-content">
-      <span class="tag" data-i18n="tag">KICHIK BIZNESLAR UCHUN</span>
-      <h1 data-i18n-html="h1">
-        Kichik biznesingiz<br>
-        <span>internetda</span> ko'rinsin
-      </h1>
-      <p data-i18n="hero_p">
-        Tayyor shablonlar bilan arzon va tez veb-sayt.<br>
-        Murakkab kod kerak emas.
-      </p>
+  <header class="hero" id="top">
+    <div class="wrap">
+      <span class="tag" data-i18n="tag">Kichik bizneslar uchun</span>
+      <h1 data-i18n-html="h1">Kichik biznesingiz <span>internetda</span> ko'rinsin</h1>
+      <p data-i18n="hero_p">Tayyor shablonlar bilan arzon va tez veb-sayt. Murakkab kod kerak emas.</p>
       <div class="cta">
         <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
         <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+
   <div class="statband">
     <div class="wrap">
       <div class="stats reveal">
@@ -79,35 +80,9 @@
       </div>
     </div>
   </div>
-<!-- Trust strip (Stripe uslubida) -->
-<section class="trust">
-  <div class="wrap trust-inner">
-    <div class="trust-item">
-      <strong>2+</strong>
-      <span>Tayyor shablon</span>
-    </div>
-    <div class="trust-item">
-      <strong>3</strong>
-      <span>Til (UZ / RU / EN)</span>
-    </div>
-    <div class="trust-item">
-      <strong>0 so'm</strong>
-      <span>Birinchi namuna</span>
-    </div>
-    <div class="trust-item">
-      <strong>Farg'ona</strong>
-      <span>Boshlanish nuqtasi</span>
-    </div>
-  </div>
-</section>
 
   <main>
     <div class="wrap">
-      <div class="feats reveal">
-        <div class="feat"><b data-i18n="feat1_t">Tayyor shablonlar</b><span data-i18n="feat1_d">Noldan boshlamasdan, tayyor tuzilma bilan.</span></div>
-        <div class="feat"><b data-i18n="feat2_t">Kodsiz yangilash</b><span data-i18n="feat2_d">Ma'lumot bitta faylda, sahifa undan yasaladi.</span></div>
-        <div class="feat"><b data-i18n="feat3_t">Telefonda qulay</b><span data-i18n="feat3_d">Har qanday ekranga moslashadi.</span></div>
-      </div>
       <div class="offer reveal">
         <div>
           <h3 data-i18n="offer_h">Birinchi namunalar bepul</h3>
@@ -116,7 +91,8 @@
         <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="offer_btn">Bepul namuna so'rash</a>
       </div>
     </div>
-        <section id="haqida">
+
+    <section id="haqida">
       <div class="wrap">
         <div class="head reveal"><h2 data-i18n="about_h">Loyiha haqida</h2></div>
         <div class="about reveal">
