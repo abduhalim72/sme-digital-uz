@@ -15,36 +15,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
-  <style>
-  .steps,.bento,.grid{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:640px){.steps,.grid{grid-template-columns:repeat(3,1fr)}}
-  @media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}.tile.big{grid-row:span 2}}
-  .small{margin:10px 0 0;font-size:.8rem;opacity:.7}
-  .about{max-width:720px;margin:0 auto;text-align:left;font-size:1.08rem;line-height:1.75;border-left:4px solid var(--orange);padding-left:22px}
-  .about p{margin:0 0 14px;color:var(--text)}
-  .nav:not(.scrolled){background:transparent;border-bottom-color:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
-  #top.hero{margin-top:-64px;padding:170px 0 120px;min-height:88vh;display:flex;align-items:center;text-align:left;background:linear-gradient(90deg,rgba(7,26,51,.98) 0%,rgba(7,26,51,.90) 30%,rgba(7,26,51,.30) 52%,rgba(7,26,51,0) 70%),url("hero2.jpg") right -8vw center/auto 100% no-repeat,var(--navy)}
-  #top.hero .wrap{width:100%}
-  #top.hero h1{max-width:540px;margin-left:0;margin-right:0;font-size:clamp(2.3rem,4.6vw,4.2rem);text-shadow:0 2px 24px rgba(0,0,0,.35)}
-  #top.hero p{max-width:460px;margin-left:0;margin-right:0}
-  #top .cta{justify-content:flex-start}
-  #top .btn{border-radius:14px}
-  .menu .pill{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
-  .nav.scrolled .menu .pill{background:var(--orange);color:var(--navy);border-color:var(--orange)}
-  @media(max-width:999px){#top.hero{background:linear-gradient(180deg,rgba(7,26,51,.85),rgba(7,26,51,.62)),url("hero2.jpg") center/cover no-repeat,var(--navy)}#top.hero h1{max-width:none}}
-  .statband{background:var(--ink);padding:36px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 12px;text-align:center}
-  .stat b{display:block;font-size:clamp(2rem,5vw,3.1rem);font-weight:800;line-height:1.05;background:linear-gradient(90deg,#f97316,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .stat span{display:block;margin-top:8px;color:#cfd9e8;font-size:.95rem}
-  @media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}.stat+.stat{border-left:1px solid rgba(255,255,255,.14)}}
-    #top .wrap{position:relative;z-index:2}
-  #top .tag{display:inline-block;color:#ffb27a !important;opacity:1 !important;visibility:visible !important}
-  #top h1{color:#fff !important;opacity:1 !important;visibility:visible !important}
-  #top h1 span{color:#f97316 !important;-webkit-text-fill-color:#f97316 !important;background:none !important}
-  #top p{color:#cfd9e8 !important;opacity:1 !important;visibility:visible !important}
-  #top .btn-primary{background:#f97316 !important;color:#0b2545 !important;opacity:1 !important;visibility:visible !important}
-  #top .btn-ghost{color:#fff !important;opacity:1 !important}
-  </style>
 </head>
 <body>
   <nav class="nav">
@@ -65,61 +35,64 @@
     </div>
   </nav>
 
- <header class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="hero-content">
-      <span class="tag" data-i18n="tag">KICHIK BIZNESLAR UCHUN</span>
-      <h1 data-i18n-html="h1">
-        Kichik biznesingiz<br>
-        <span>internetda</span> ko'rinsin
-      </h1>
-      <p data-i18n="hero_p">
-        Tayyor shablonlar bilan arzon va tez veb-sayt.<br>
-        Murakkab kod kerak emas.
-      </p>
-      <div class="cta">
-        <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
-        <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
+  <header class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-content">
+        <span class="tag" data-i18n="tag">KICHIK BIZNESLAR UCHUN</span>
+        <h1 data-i18n-html="h1">
+          Kichik biznesingiz<br>
+          <span>internetda</span> ko'rinsin
+        </h1>
+        <p data-i18n="hero_p">
+          Tayyor shablonlar bilan arzon va tez veb-sayt.<br>
+          Murakkab kod kerak emas.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://t.me/sotvoldiyev_abduhalim" data-i18n="nav_contact">Bog'lanish</a>
+          <a class="btn btn-ghost" href="dokon.html" data-i18n="sample">Namunani ko'rish</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Trust strip (hero ichida) -->
-  <div class="trust">
-    <div class="wrap trust-inner">
-      <div class="trust-item">
-        <strong>2</strong>
-        <span data-i18n="trust_1">Tayyor shablon</span>
-      </div>
-      <div class="trust-item">
-        <strong>3</strong>
-        <span data-i18n="trust_2">Til (UZ / RU / EN)</span>
-      </div>
-      <div class="trust-item">
-        <strong>0 so'm</strong>
-        <span data-i18n="trust_3">Birinchi namuna</span>
-      </div>
-      <div class="trust-item">
-        <strong>Farg'ona</strong>
-        <span data-i18n="trust_4">Boshlanish nuqtasi</span>
-      </div>
-    </div>
-  </div>
-</header>
-
-  <div class="statband">
-    <div class="wrap">
-      <div class="stats reveal">
-        <div class="stat"><b>2</b><span data-i18n="st1">Tayyor shablon</span></div>
-        <div class="stat"><b>3</b><span data-i18n="st2">Til: UZ / RU / EN</span></div>
-        <div class="stat"><b>0 so'm</b><span data-i18n="st3">Birinchi namuna</span></div>
-        <div class="stat"><b data-i18n="st4n">Farg'ona</b><span data-i18n="st4">Boshlanish nuqtasi</span></div>
+    <div class="trust">
+      <div class="wrap trust-inner">
+        <div class="trust-item">
+          <strong>2</strong>
+          <span data-i18n="trust_1">Tayyor shablon</span>
+        </div>
+        <div class="trust-item">
+          <strong>3</strong>
+          <span data-i18n="trust_2">Til (UZ / RU / EN)</span>
+        </div>
+        <div class="trust-item">
+          <strong>0 so'm</strong>
+          <span data-i18n="trust_3">Birinchi namuna</span>
+        </div>
+        <div class="trust-item">
+          <strong>Farg'ona</strong>
+          <span data-i18n="trust_4">Boshlanish nuqtasi</span>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <main>
     <div class="wrap">
+      <div class="feats reveal">
+        <div class="feat">
+          <b data-i18n="f1_h">Tayyor shablonlar</b>
+          <span data-i18n="f1_p">Noldan boshlamasdan, tayyor tuzilma bilan.</span>
+        </div>
+        <div class="feat">
+          <b data-i18n="f2_h">Kodsiz yangilash</b>
+          <span data-i18n="f2_p">Ma'lumot bitta faylda, sahifa undan yasaladi.</span>
+        </div>
+        <div class="feat">
+          <b data-i18n="f3_h">Telefonda qulay</b>
+          <span data-i18n="f3_p">Har qanday ekranga moslashadi.</span>
+        </div>
+      </div>
+
       <div class="offer reveal">
         <div>
           <h3 data-i18n="offer_h">Birinchi namunalar bepul</h3>
@@ -136,19 +109,6 @@
           <p data-i18n="about_1">Bu loyiha mahallamizdagi kichik do'kondan boshlandi. Do'konda mijoz kam va savdo sust edi, odamlar esa vaqtining ko'pini internetda o'tkazardi. Egasi esa qimmat reklamaga pul sarflay olmasdi.</p>
           <p data-i18n="about_2">Men kollejda kompyuter grafikasi va dizayn o'qiyman. Shu muammoga arzon va tayyor yechim topish uchun SME-Digital UZ ni boshladim: kichik biznes egasi murakkab kodsiz o'z sahifasini olishi mumkin.</p>
           <p data-i18n="about_3">Hozir loyiha boshlang'ich bosqichda: bosh sahifa va ikkita namuna shablon tayyor, birinchi haqiqiy biznes sahifasini yaratishga tayyorlanyapman.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="jonli">
-      <div class="wrap">
-        <div class="head reveal"><h2 data-i18n="live_h">Jonli namuna</h2><p data-i18n="live_p">Shablonni tanlang, sahifa shu yerning o'zida ochiladi.</p></div>
-        <div class="live reveal">
-          <div class="tabs">
-            <button type="button" class="tab on" data-src="dokon.html?biznes=dokon" data-i18n="shop_h">Do'kon</button>
-            <button type="button" class="tab" data-src="dokon.html?biznes=ustaxona" data-i18n="wk_h">Ustaxona</button>
-          </div>
-          <div class="device"><div class="screen"><iframe id="preview" src="dokon.html?biznes=dokon" title="Jonli namuna" loading="lazy"></iframe></div></div>
         </div>
       </div>
     </section>
@@ -253,12 +213,6 @@
     window.addEventListener('scroll', function () {
       document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 20);
     }, { passive: true });
-    document.querySelectorAll('.tab').forEach(function (t) {
-      t.addEventListener('click', function () {
-        document.getElementById('preview').src = t.getAttribute('data-src');
-        document.querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === t); });
-      });
-    });
   </script>
   <script src="lang.js"></script>
 </body>
