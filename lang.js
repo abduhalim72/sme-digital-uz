@@ -29,6 +29,11 @@ const T = {
     nat1_h: "Maqsad", nat1_p: "O'zbekiston bo'ylab kichik bizneslar uchun arzon va tayyor veb-sayt shablonlari. Boshlanishi: Farg'ona viloyati.",
     nat2_h: "Hozirgi holat", nat2_p: "Bosh sahifa va ikkita namuna shablon (do'kon va ustaxona) internetda.",
     nat3_h: "Rejada", nat3_p: "Birinchi haqiqiy biznes sahifasi va maktab o'quvchilari uchun raqamli savodxonlik bo'yicha taqdimotlar.",
+        nav_about: "Loyiha haqida",
+    about_h: "Loyiha haqida",
+    about_1: "Bu loyiha mahallamizdagi kichik do'kondan boshlandi. Do'konda mijoz kam va savdo sust edi, odamlar esa vaqtining ko'pini internetda o'tkazardi. Egasi esa qimmat reklamaga pul sarflay olmasdi.",
+    about_2: "Men kollejda kompyuter grafikasi va dizayn o'qiyman. Shu muammoga arzon va tayyor yechim topish uchun SME-Digital UZ ni boshladim: kichik biznes egasi murakkab kodsiz o'z sahifasini olishi mumkin.",
+    about_3: "Hozir loyiha boshlang'ich bosqichda: bosh sahifa va ikkita namuna shablon tayyor, birinchi haqiqiy biznes sahifasini yaratishga tayyorlanyapman.",
     footer: "SME-Digital UZ. Kichik bizneslar uchun raqamli yechimlar.",
     foot_note: "Bosh blokdagi rasm sun'iy intellekt yordamida yaratilgan."
   },
@@ -62,6 +67,11 @@ const T = {
     nat1_h: "Цель", nat1_p: "Доступные готовые шаблоны сайтов для малого бизнеса по всему Узбекистану. Старт: Ферганская область.",
     nat2_h: "Сейчас", nat2_p: "Главная страница и два примера шаблонов (магазин и мастерская) уже в интернете.",
     nat3_h: "В планах", nat3_p: "Страница первого реального бизнеса и презентации по цифровой грамотности для школьников.",
+        nav_about: "О проекте",
+    about_h: "О проекте",
+    about_1: "Этот проект начался с небольшого магазина в нашем районе. Покупателей там было мало, продажи шли вяло, а люди проводили большую часть времени в интернете. Хозяин не мог тратить деньги на дорогую рекламу.",
+    about_2: "Я учусь в колледже по направлению «Компьютерная графика и дизайн». Чтобы найти доступное и готовое решение этой проблемы, я начал SME-Digital UZ: владелец малого бизнеса может получить свою страницу без сложного кода.",
+    about_3: "Сейчас проект на начальном этапе: готовы главная страница и два примера шаблонов, я готовлюсь создать первую страницу для реального бизнеса.",
     footer: "SME-Digital UZ. Цифровые решения для малого бизнеса.",
     foot_note: "Изображение в верхнем блоке создано с помощью ИИ."
   },
@@ -95,6 +105,11 @@ const T = {
     nat1_h: "Goal", nat1_p: "Affordable, ready-made website templates for small businesses across Uzbekistan, starting in the Fergana region.",
     nat2_h: "Current status", nat2_p: "The landing page and two sample templates (shop and workshop) are online.",
     nat3_h: "Planned", nat3_p: "A first real business page and digital literacy presentations for school students.",
+        nav_about: "About",
+    about_h: "About the project",
+    about_1: "This project began with a small shop in our neighbourhood. It had few customers and weak sales, while people spent most of their time online. The owner could not afford expensive advertising.",
+    about_2: "I study Computer Graphics and Design at college. To find an affordable, ready-made solution to this problem, I started SME-Digital UZ: a small business owner can get their own page without complex code.",
+    about_3: "The project is at an early stage: the landing page and two sample templates are ready, and I am preparing to build the first page for a real business.",
     footer: "SME-Digital UZ. Digital solutions for small businesses.",
     foot_note: "The header image was created with AI."
   }
